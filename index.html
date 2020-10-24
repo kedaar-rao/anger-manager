@@ -2,6 +2,7 @@
 <head>
 	<title>Health at Home</title>
 	<link href="main.css" rel="stylesheet">
+	<script src="form.js"></script>
 </head>
 <body>
 	<div id="title">
@@ -9,11 +10,32 @@
 	<div id="inputform">
 		<form>
 			<h2>Health at Home</h2>
+			<div id="question">
+				<h3>How are you feeling today?</h3>
+			</div>
 			<br>
-			<input type="text" name="feeling" placeholder="Tell me how you are feeling today or what issues you are facing?" required>
-			<br>
-			<input type="submit" name="submit" Value="Submit">
+			<div id="happy">
+				<button type="button" onclick="selectHappy()">Happy</button>
+			</div>
+			
+			<div id="sad">
+				<button type="button" onclick="selectSad()">Sad</button>
+			</div>
+			
+			<div id="angry">
+				<button type="button" onclick="selectAngry()">Angry</button>
+			</div>
+			
+			<div id="sick">
+				<button type="button" onclick="selectSick()">Sick</button>
+			</div>
+			
+			<div id="suicidal">
+				<button type="button" onclick="selectSuicidal()">Suicidal</button>
+			</div>
 
+			<div id ="output">
+			</div>
 		</form>
 	</div>
 <body>
